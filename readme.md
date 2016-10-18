@@ -58,10 +58,35 @@ set name = "Maxou"
 where id = 1;
 ```
 
+Add a new column to the table. 
 
+```sql
+alter table pets add column age integer; 
+```
 
+Delete the entire line.
 
+```sql
+delete from pets where name = "Maxou";
+```
 
+### Like
+
+With `like` it's possible to filter. Let's add two new pets. We want to display the pets with a 'a' in their name.
+
+```sql
+insert into pets (name) values ("Shafty");
+insert into pets (name) values ("Bogey");
+select * from pets where name like '%a%';
+```
+and the result is :
+
+```bash
+id          name        age
+----------  ----------  ----------
+1           Max
+2           Shafty
+```
  
 
 ### To be continue...
