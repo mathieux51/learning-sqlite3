@@ -97,7 +97,16 @@ id          name        age
 
 # Node and sqlite3
 
+### What do i want to do ?
 
+*index.js* is a fake server. I want to be able to check, add and  delete a pet from the data base. I want to be able to write 
+
+```js
+db.pets.read( () => {
+  // Do stuff
+})
+``` 
+and the same structure for `db.pets.save` and `db.pets.delete`. 
 
 ### To be continue...
 
