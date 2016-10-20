@@ -18,11 +18,13 @@ I want to node and sqlite to interact with each other. My goal is to create a ta
 * Date, the date formatted as YYYY-MM-DD for the year, month, and day 
 * Real, a decimal value 
 
+### Select
+
 ```sql
 select * from table_name;
 .show
 ```
-### Basics
+### Create
 
 To create a table :
 
@@ -43,12 +45,14 @@ create table pets (
   name text
 );
 ```
+### Insert
 
 `Insert` statement inserts new rows into a table. Let's insert a new pet.
 
 ```sql
 insert into pets (name) values ("Max");
 ```
+### Update
 
 Update a data knowing the id. 
 
@@ -57,12 +61,15 @@ update pets
 set name = "Maxou"
 where id = 1;
 ```
+### Alter
 
 Add a new column to the table. 
 
 ```sql
 alter table pets add column age integer; 
 ```
+
+### Delete
 
 Delete the entire line.
 
@@ -87,7 +94,10 @@ id          name        age
 1           Max
 2           Shafty
 ```
- 
+
+# Node and sqlite3
+
+
 
 ### To be continue...
 
